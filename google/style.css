@@ -1,0 +1,151 @@
+img {
+  /* image */
+  position: absolute;
+  width: 272px;
+  height: 92px;
+  left: calc(50% - 272px/2);
+  top: calc(50% - 92px/2 - 168.5px);
+}
+
+.iconify {
+  position: static;
+  width: 17px;
+  height: 17px;
+  left: calc(50% - 17px/2 - 267.5px);
+  top: calc(50% - 17px/2);
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 5px;
+}
+
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 16px;
+
+  position: absolute;
+  width: 584px;
+
+  border: 1px solid #DFE1E5;
+  border-radius: 25px;
+}
+
+h1 {
+
+  position: absolute;
+  width: 584px;
+  height: 45px;
+  left: 668px;
+  top: 375px;
+
+}
+
+h2 {
+  /* header */
+
+
+  position: absolute;
+  width: 271px;
+  height: 82px;
+  left: 817px;
+  top: 450px;
+}
+
+p {
+  /* Google Search */
+
+
+  position: static;
+  width: 123px;
+  height: 17px;
+  left: calc(50% - 123px/2);
+  top: calc(50% - 17px/2);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+
+  color: #000000;
+
+}
+
+.btn1 {
+  /* btn1 */
+
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: static;
+  width: 122px;
+  height: 37px;
+  left: 0px;
+  top: 0px;
+
+  background: #F8F9FA;
+  border-radius: 4px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 22px;
+}
+
+.btn2 {
+  /* btn2 */
+
+
+  /* Auto Layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+
+  position: static;
+  width: 143px;
+  height: 37px;
+  left: 144px;
+  top: 0px;
+
+  background: #F8F9FA;
+  border-radius: 4px;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 22px;
+}
+.btnbox {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 287px;
+height: 37px;
+left: 816px;
+top: 450px;
+
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+}
