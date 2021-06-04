@@ -55,3 +55,7 @@ header .follow-btn {
   footer .cta {
     margin-left: auto;
   }
+    footer .cta button {
+    border: 0;
+    background: transparent;
+  }
