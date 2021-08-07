@@ -1,0 +1,155 @@
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: black;
+  margin: 0;
+}
+
+.container {
+  background-image: url(https://previews.123rf.com/images/romastudio/romastudio1602/romastudio160200291/52915694-superfood-background-food-photography-of-the-variety-of-vegetables-at-the-market.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  height: 100vh;
+}
+
+.overlay {
+  background: green;
+  opacity: .7;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  height: 100px;
+  left: calc(50% - 516px/2);
+  top: calc(50% - 98px/2 - 766.5px);
+  color: white;
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
+
+  border-radius: 20px;
+}
+
+#title {
+  margin-bottom: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#description {
+  margin-top: 5px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 35px;
+}
+
+@media screen and (min-width: 736px) {
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px;
+    grid-gap: 35px;
+    grid-template-areas:
+      "input input"
+      "input input"
+      "checkboxes ."
+      "fav fav"
+      "checkboxes2 ."
+      "comment-box comment-box"
+      "btn btn";
+  }
+
+  .contact-form {
+    margin-top: 30px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 3em;
+  }
+
+  .form-field {
+    position: relative;
+  }
+
+  .label {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    line-height: 26px;
+    font-weight: 400;
+    color: black;
+    cursor: text;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="age"]{
+    border: 1px solid #CDCDCD;
+    box-sizing: border-box;
+    border-radius: 118px;
+    width: 100%;
+    height: 3em;
+  }
+
+  .checkboxes {
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
+    list-style: none;
+  }
+
+  .fav {
+    grid-area: fav;
+  }
+
+  .checkboxes2 {
+    grid-area: checkboxes2;
+    margin: 0%;
+    padding: 0%;
+    text-align: left;
+    list-style: none;
+  }
+
+  .comment-box {
+    grid-area: comment-box;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #4BD350;
+    border-radius: 118px;
+    padding: 19px 32px;
+    grid-area: btn;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    width: 20%;
+  }
+}

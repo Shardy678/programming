@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" id="contact_form" class="contact-form contact-grid">
+    
+        <div class="form-field name">
+          <label class="label" for="fname">full name *</label>
+          <input id="fname" type="text" required>
+        </div>
+      
+        <div class="form-field email">
+          <label class="label" for="email">email *</label>
+          <input id="email" type="email" required>
+        </div>
+          
+        <div class="form-field phone">
+          <label class="label" for="phone">phone *</label>
+          <input id="phone" type="tel" required>
+        </div>
+          
+        <div class="form-field subject">
+          <label class="label">subject *</label>
+          <select name="subject" form="contact_form" required>
+            <option value="appointment" selected>Appointment</option>
+            <option value="cancellation">Cancellation</option>
+            <option value="order">Order</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+          
+        <div class="form-field comment-box">
+          <label class="label">message</label>
+          <textarea name="comment-box" id="message"></textarea>
+        </div>
+      
+        <ul class="checkboxes">
+          <li><label><input type="checkbox" name="text1"/>Text 1</label></li>
+          <li><label><input type="checkbox" name="text2"/>Text 2</label></li>
+          <li><label><input type="checkbox" name="text3"/>Text 3</label></li>
+        </ul><div class="submit-button">
+          <button id="submit-btn" class="btn" type="submit" value="submit" onclick="validateForm()">submit</button>
+        </div>  
+      </form>
+</body>
+</html>

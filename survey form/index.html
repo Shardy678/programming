@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Vegan Recipes Survey Form</h1>
+      <p id="description" class="description text-center">Thank you for subscribing to our cooking blog</p>
+    </header>
+    <form action="#" id="survey-form contact_form" class="contact-form contact-grid">
+
+      <div class="form-field name">
+        <label class="label" for="name">Name</label>
+        <input id="name" type="text" required>
+      </div>
+
+      <div class="form-field name">
+        <label class="label" for="name">Phone number</label>
+        <input id="number" type="tel" required>
+      </div>
+
+      <div class="form-field email">
+        <label class="label" for="email">Email</label>
+        <input id="email" type="email" required>
+      </div>
+      <div class="form-field age">
+        <label class="label" for="age">Age (optional)</label>
+        <input id="age" type="age" >
+      </div>
+
+      <ul class="form-field checkboxes">
+        <label for="name">Would you reccomend our blog to your friends?</label>
+        <li><label><input type="checkbox">Definetely</label></li>
+        <li><label><input type="checkbox">Maybe</label></li>
+        <li><label><input type="checkbox">Not sure</label></li>
+      </ul>
+
+      <div class="form-field fav">
+    <label class="label">What is your favorite recipe on our blog?</label>
+    <input name="fav" id="message" type="text"></input>
+      </div>
+
+      <ul class="form-field checkboxes2">
+        <label for="name">What recipes you would like to see more?</label>
+        <li><label><input type="checkbox">Sugar-free</label></li>
+        <li><label><input type="checkbox">Gluten-free</label></li>
+        <li><label><input type="checkbox">Vegeterian</label></li>
+        <li><label><input type="checkbox">Vegan</label></li>
+      </ul>
+
+      <div class="form-field comment-box">
+        <label class="label">Any comments or suggestions?</label>
+        <input name="comment-box" id="message" type="text"></input>
+      </div>
+
+      <button class="form-field btn">Submit</button>
+</body>
+
+</html>
