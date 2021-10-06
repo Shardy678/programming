@@ -8,7 +8,7 @@ export const NavigationBar = () => {
   <Styles>
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#">Google Pixel Buds A-Series</Navbar.Brand>
+        <Navbar.Brand href="#">Product Name</Navbar.Brand>
         <div className="d-flex">
           <p className="m-0 fs-5">From $99</p>
           <p className="m-0 text-muted">Free shipping</p>
