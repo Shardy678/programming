@@ -1,10 +1,11 @@
+import { getDefaultNormalizer } from "@testing-library/dom";
 import React from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import styled from "styled-components";
 
 const Styles = styled.div``;
 
-export const NavigationBar = () => {
+const NavigationBar = () => {
   <Styles>
     <Navbar expand="lg">
       <Container>
@@ -17,3 +18,4 @@ export const NavigationBar = () => {
     </Navbar>
   </Styles>;
 };
+export default NavigationBar;
